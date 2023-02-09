@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class StoreFront {
+  
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    
+    System.out.println("Welcome to the Store Front!");
+    System.out.println("What would you like to buy today?");
+    System.out.println("1. T-Shirt");
+    System.out.println("2. Jeans");
+    System.out.println("3. Hat");
+    System.out.println("4. Sunglasses");
+    System.out.print("Enter your choice: ");
+    int choice = input.nextInt();
+    
+    double price = 0.0;
+    switch (choice) {
+      case 1:
+        price = 19.99;
+        break;
+      case 2:
+        price = 49.99;
+        break;
+      case 3:
+        price = 9.99;
+        break;
+      case 4:
+        price = 24.99;
+        break;
+      default:
+        System.out.println("Invalid choice.");
+    }
+    
+    if (price != 0.0) {
+      System.out.println("You have selected item #" + choice + " for $" + price);
+    }
+  }
+  
+}
