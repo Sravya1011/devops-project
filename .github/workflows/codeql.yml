@@ -48,7 +48,7 @@ jobs:
         java-package: jdk
         architecture: x64
         check-latest: false
-        distribution: openjdk
+        distribution: openjdk11
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
