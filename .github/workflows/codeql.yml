@@ -44,11 +44,11 @@ jobs:
     - name: Setup Java environment
       uses: actions/setup-java@v2
       with:
-        java-version: 8
+        java-version: 14
         java-package: jdk
         architecture: x64
         check-latest: false
-        distribution: openjdk8
+        distribution: adoptopenjdk14
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
